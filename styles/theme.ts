@@ -13,4 +13,11 @@ export const theme = extendTheme({
     heading: 'Poppins',
     body: 'Poppins',
   },
+  styles: {
+    global: {
+      body: {
+        color: 'black.700'
+      }
+    }
+  }
 })
