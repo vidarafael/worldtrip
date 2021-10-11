@@ -17,6 +17,7 @@ const Home: NextPage = () => {
         bgImage="url(images/Background.png)" 
         px="4"
         objectFit="cover"
+        bgPosition="center"
         width="100vw"
         justify="space-evenly"
         align="center"
