@@ -1,19 +1,9 @@
 import { Image } from '@chakra-ui/image'
-import { Box, Flex, Heading, Text } from '@chakra-ui/layout'
-import type { NextPage } from 'next'
+import { Box, Flex, Text } from '@chakra-ui/layout'
 
-const Home: NextPage = () => {
+const Banner = () => {
   return (
-   <>
-      <header>
-        <Flex
-          justify="center"
-          p="5"
-        >
-          <Image src="/images/logo.svg" alt="logo" />
-        </Flex>
-      </header>
-      <Flex 
+    <Flex 
         bgImage="url(images/Background.png)" 
         px="4"
         objectFit="cover"
@@ -34,8 +24,7 @@ const Home: NextPage = () => {
           <Image src="/images/Airplane.svg" alt="Avião" mb="-30px"/>
         </Box>
       </Flex>
-   </>
   )
 }
 
-export default Home
+export { Banner }
