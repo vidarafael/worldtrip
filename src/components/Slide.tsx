@@ -8,6 +8,7 @@ import { Box } from '@chakra-ui/layout';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import styles from '../styles/styles.module.css';
 
 
 const Slide = (): JSX.Element => {
@@ -15,6 +16,7 @@ const Slide = (): JSX.Element => {
     <Box maxWidth="1080px" mx="auto" my="30px">
       <Swiper
       // install Swiper modules
+        className={styles['swiper-button-prev']}
         modules={[Navigation, Pagination, A11y]}
         spaceBetween={10}
         slidesPerView={1}
@@ -27,9 +29,15 @@ const Slide = (): JSX.Element => {
         <SwiperSlide>
           <Image src="/images/continents/europacontinent.png" alt="logo" />
         </SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
+        <SwiperSlide>
+          <Image src="/images/continents/europacontinent.png" alt="logo" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image src="/images/continents/europacontinent.png" alt="logo" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image src="/images/continents/europacontinent.png" alt="logo" />
+        </SwiperSlide>
       </Swiper>
     </Box>
   )
