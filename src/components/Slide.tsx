@@ -1,7 +1,7 @@
 import { Navigation, Pagination, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Image } from '@chakra-ui/image'
-import { Box } from '@chakra-ui/layout';
+import { Box, Text } from '@chakra-ui/layout';
 
 
 // Import Swiper styles
@@ -26,6 +26,10 @@ const Slide = (): JSX.Element => {
       background: #FFBA08;
     }
 
+    div.swiper-slide,
+    div.swiper-slide-active {
+      position: relative;
+    }
   `
 
   return (
@@ -47,6 +51,28 @@ const Slide = (): JSX.Element => {
         >
           <SwiperSlide>
             <Image src="/images/continents/europacontinent.png" alt="logo" />
+            <Box
+              position="absolute"
+              top="50%"
+              left="50%"
+              transform="translate(-50%, -50%)"
+              textAlign="center"
+            >
+              <Text 
+                fontSize="36px"
+                color="white"
+                fontWeight="bold"
+              >
+                Europa<br/>
+              </Text>
+              <Text
+                fontSize="20px"
+                color="white"
+                fontWeight="bold"
+              >
+                O Continente mais antigo.
+              </Text>
+            </Box>
           </SwiperSlide>
           <SwiperSlide>
             <Image src="/images/continents/europacontinent.png" alt="logo" />
