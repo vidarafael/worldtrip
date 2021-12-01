@@ -1,5 +1,6 @@
 import { Box, Flex, Text, HStack, VStack } from "@chakra-ui/layout";
 import { BannerContinent } from "../../components/continent/BannerContinent";
+import { Card } from "../../components/continent/Card";
 import { Header } from "../../components/Header";
 
 export default function Continent() {
@@ -9,8 +10,8 @@ export default function Continent() {
       <BannerContinent />
       <Flex
         maxW="1200px"
+        marginY="50px"
         marginX="auto"
-        padding="50px"
         align="center"
       >
         <Box w="500px" textAlign="justify">
@@ -58,6 +59,22 @@ export default function Continent() {
           </VStack>
         </HStack>
       </Flex>
+
+      <Box
+        maxW="1200px"
+        marginX="auto"
+      >
+        <Text fontWeight="600" fontSize="3xl">
+          Cidades +100
+        </Text>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+
+      </Box>
+      
     </>
   )
 }
