@@ -1,4 +1,5 @@
 import { Box, Flex, Text, HStack, VStack } from "@chakra-ui/layout";
+import React from "react";
 import { BannerContinent } from "../../components/continent/BannerContinent";
 import { Card } from "../../components/continent/Card";
 import { Header } from "../../components/Header";
@@ -67,12 +68,13 @@ export default function Continent() {
         <Text fontWeight="600" fontSize="3xl">
           Cidades +100
         </Text>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-
+        <Box spacing="24px" maxW="1200px" marginX="auto">
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+        </Box>
       </Box>
       
     </>

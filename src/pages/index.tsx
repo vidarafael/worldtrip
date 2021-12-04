@@ -1,4 +1,4 @@
-import type { NextPage } from 'next'
+import type { GetStaticProps, NextPage } from 'next'
 import { Banner } from '../components/Banner'
 import { Header } from '../components/Header'
 import { Traveltypes } from '../components/Traveltypes'
@@ -14,5 +14,6 @@ const Home: NextPage = () => {
    </>
   )
 }
+
 
 export default Home

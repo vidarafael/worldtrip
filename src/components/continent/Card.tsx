@@ -8,7 +8,9 @@ const Card = () => {
       width="250px" 
       border="1px solid #ffb9087d"
       borderRadius="5px"
-      marginY="50px"
+      marginY="30px"
+      marginX="25px"
+      display="inline-block"
     >
       <Image 
         src="/images/pages/continent/components/Londres.png" 
