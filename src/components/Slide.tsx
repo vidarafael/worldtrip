@@ -2,6 +2,7 @@ import { Navigation, Pagination, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Image } from '@chakra-ui/image'
 import { Box, Text } from '@chakra-ui/layout';
+import Link from 'next/link'
 
 
 // Import Swiper styles
@@ -50,29 +51,35 @@ const Slide = (): JSX.Element => {
           onSlideChange={() => console.log('slide change')}
         >
           <SwiperSlide>
-            <Image src="/images/continents/europacontinent.png" alt="logo" />
-            <Box
-              position="absolute"
-              top="50%"
-              left="50%"
-              transform="translate(-50%, -50%)"
-              textAlign="center"
-            >
-              <Text 
-                fontSize="36px"
-                color="white"
-                fontWeight="bold"
-              >
-                Europa<br/>
-              </Text>
-              <Text
-                fontSize="20px"
-                color="white"
-                fontWeight="bold"
-              >
-                O Continente mais antigo.
-              </Text>
-            </Box>
+            <Link href="/continent/europa" passHref>
+              <a>
+                <Box>
+                  <Image src="/images/continents/europacontinent.png" alt="logo" />
+                  <Box
+                    position="absolute"
+                    top="50%"
+                    left="50%"
+                    transform="translate(-50%, -50%)"
+                    textAlign="center"
+                  >
+                    <Text 
+                      fontSize="36px"
+                      color="white"
+                      fontWeight="bold"
+                    >
+                      Europa<br/>
+                    </Text>
+                    <Text
+                      fontSize="20px"
+                      color="white"
+                      fontWeight="bold"
+                    >
+                      O Continente mais antigo.
+                    </Text>
+                  </Box>
+                </Box>
+              </a>
+            </Link>
           </SwiperSlide>
           <SwiperSlide>
             <Image src="/images/continents/europacontinent.png" alt="logo" />

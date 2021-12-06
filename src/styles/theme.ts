@@ -18,6 +18,6 @@ export const theme = extendTheme({
       body: {
         color: 'black.700'
       }
-    }
+    },
   }
 })
